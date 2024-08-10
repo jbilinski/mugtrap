@@ -1,0 +1,2 @@
+# mugtrap
+mugtrap static site
