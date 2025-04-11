@@ -1,0 +1,23 @@
+on:
+    workflow_dispatch:
+
+# Removed invalid line
+jobs:
+  agent-install:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: taiki-e/install-action@v2
+        with:
+          tool: zola@0.19.1
+  build-check:
+    name: Build with CHECK_LINKS and CHECK_FLAGS
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Build with the latest action rev
+      uses: shalzz/zola-deploy-action@master
+      env:
+        BUILD_ONLY: true
+        BUILD_DIR: _site
+        CHECK_LINKS: true
+        CHECK_FLAGS: --draft
