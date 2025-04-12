@@ -7,16 +7,16 @@ jobs:
     steps:
       - uses: taiki-e/install-action@v2
         with:
-          tool: zola@0.19.1
+          tool: zola@0.20.0
   build-check:
     name: Build with CHECK_LINKS and CHECK_FLAGS
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@master
     - name: Build with the latest action rev
-      uses: shalzz/zola-deploy-action@master
+      uses: jbilinski/mugtrap@main
       env:
         BUILD_ONLY: true
-        BUILD_DIR: _site
+        BUILD_DIR: public
         CHECK_LINKS: true
         CHECK_FLAGS: --draft
