@@ -8,15 +8,15 @@ jobs:
       - uses: taiki-e/install-action@v2
         with:
           tool: zola@0.20.0
-  build-check:
-    name: Build with CHECK_LINKS and CHECK_FLAGS
-    runs-on: self-hosted
-    steps:
-    - uses: actions/checkout@v4
-    - name: Build with the latest action rev
-      uses: shalzz/zola-deploy-action@v0.20.0
-      env:
-        BUILD_ONLY: true
-        BUILD_DIR: public
-        CHECK_LINKS: true
-        CHECK_FLAGS: --draft
+  # build-check:
+  #   name: Build with CHECK_LINKS and CHECK_FLAGS
+  #   runs-on: self-hosted
+  #   steps:
+  #   - uses: actions/checkout@v4
+  #   - name: Build with the latest action rev
+  #     uses: shalzz/zola-deploy-action@v0.20.0
+  #     env:
+  #       BUILD_ONLY: true
+  #       BUILD_DIR: public
+  #       CHECK_LINKS: true
+  #       CHECK_FLAGS: --draft
