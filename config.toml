@@ -220,3 +220,4 @@ index_format = "elasticlunr_javascript"
 # author value will be available using {{ config.extra.author }} in templates
 #
 [extra]
+skin = "indigo_ingot"
