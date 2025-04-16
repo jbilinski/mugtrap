@@ -2,8 +2,8 @@
 base_url = "https://MugTrap.com"
 
 # The site title and description; used in feeds by default.
-title = "title"
-description = "description"
+title = "MugTrap"
+description = "Considering systems engineering tactics and architecture"
 
 # The default language; used in feeds.
 default_language = "en"
