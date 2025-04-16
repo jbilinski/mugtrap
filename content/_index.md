@@ -5,7 +5,7 @@ sort_by = "date"
 
 [extra]
 header = {title = "Considering technology engineering tactics and architecture strategy", img = "static/img/mugtrap-page159.png", img_alt = "MugTrap" }
-section_path = "projects/_projects.md"  # Where to find your posts.
+section_path = "content/projects/_content.projects.md"  # Where to find your posts.
 max_posts = 5  # Show up to 5 posts on the main page.
 +++
 # Mug Trap Home
