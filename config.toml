@@ -1,5 +1,5 @@
 # The base URL of the site; the only required configuration variable.
-base_url = "https://MugTrap.com"
+base_url = "https://MugTrap.dev"
 
 # The site title and description; used in feeds by default.
 title = "MugTrap"
@@ -222,7 +222,7 @@ index_format = "elasticlunr_javascript"
 [extra]
 skin = "indigo_ingot"
 theme_switcher = true
-base_canonical_url = "https://mugtrap.com"
+base_canonical_url = "https://MugTrap.dev"
 
 # Remote repository for your Zola site.
 # Used for `show_remote_changes` and `show_remote_source` (see below).
